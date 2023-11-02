@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(158, 160, 220);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calBody {
+  display: flex;
+  flex-direction: column;
+  background-color:blueviolet;
+  /* position: absolute; */
+  /* top: 0; */
+  width: 500px;
+  height: 600px;
+  border-radius: 8px;
+  padding: 25px;
+}
+.display {
+  height: 100px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  /* margin: 12px 24px; */
+  font-size: 20px;
+}
+.display {
+  background-color: white;
+  position: relative;
+  color: darkblue;
+  width: 90%;
+  height: 200px;
+  border-radius: 12px;
+  font-size: 2rem;
+  padding: 12px 25px;
+  border: 0px;
+}
+#result {
+  background-color: transparent;
+  color: black;
+  border: 0;
+  width: 100%;
+  margin: 12px 8px;
+  /* display: none; */
+  opacity: 0;
+}
+#equation {
+  display: block;
+  margin: 14px 10px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-color:transparent;
+  color: blueviolet;
+  border: 0;
+  font-size: 6rem;
+  width: 80%;
+  /* position: absolute;
+  top: 50px; */
+}
+.calbuttons {
+  background-color: transparent;
+  display: flex;
+  height: 70%;
+}
+.numbers {
+  /* background-color: burlywood; */
+  display: grid;
+  
+  grid-template-columns: auto auto auto;
+}
+.numbuttons {
+  height: 105px !important;
+}
+.operations {
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.calBody button {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  border: none;
+  background-color: lightblue;
+  /* padding: 1em; */
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid darkblue;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  /* box-shadow: #88291f 0px 7px 2px, #000 0px 8px 5px; */
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.calBody button:hover {
+  opacity: 1;
+}
+
+.calBody button:active {
+  top: 4px;
+  box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
+}
